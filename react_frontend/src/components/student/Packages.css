@@ -1,0 +1,30 @@
+.tour-packages {
+  background-color: cadetblue;
+}
+img {
+  height: 250px;
+  width: 250px;
+}
+.buy-button {
+  font-size: 1em;
+  background-color: green;
+}
+.pacage-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: stretch;
+}
+.card {
+  flex: 1;
+  min-width: calc(33.33% - 10px); /* Set the minimum width for each card */
+  max-width: calc(33.33% - 10px); /* Set the maximum width for each card */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.package-page {
+  margin: 0% 5% 5% 5%;
+}

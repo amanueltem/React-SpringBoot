@@ -1,0 +1,88 @@
+/* Global styles */
+body,
+h1,
+h3,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image: url("./ShowPhoto/url3.jpg");
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;  */
+  font-family: "Arial", sans-serif;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #dddddd;
+  padding: 5px;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 5%;
+  margin-right: 0.25rem;
+  max-width: max-content;
+  float: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  padding: 8px 16px;
+  /* border: 2px solid #fff;
+  border-radius: 5px; */
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 400px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+/* Example styling in HomePage.css */
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the video is behind other content */
+}
+.text {
+  background-color: #f6eeee;
+  margin-top: 13rem;
+  margin-left: 2rem;
+  max-width: max-content;
+  max-height: max-content;
+  font-size: xx-large;
+  /* float: inline-end; */
+}
+nav a.active button {
+  color: black;
+  /* text-decoration: rgb(3, 25, 138) underline; */
+  font-family: "Roboto", sans-serif;
+  border-bottom: 3px solid blue;
+}
