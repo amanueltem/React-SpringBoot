@@ -44,12 +44,12 @@ private static final Logger logger = LoggerFactory.getLogger(StudentController.c
     }
    @PostMapping
 public void registerNewStudent(@RequestBody Student student) {
-    // Convert the date string to LocalDate using DateTimeFormatter
+    /* Convert the date string to LocalDate using DateTimeFormatter
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     LocalDate dob = LocalDate.parse(student.getFormattedDob(), formatter);
 
     // Set the parsed dob to the student using setDob method
-    student.setDob(dob);
+    student.setDob(dob);*/
 
     studentService.addNewStudent(student);
 }

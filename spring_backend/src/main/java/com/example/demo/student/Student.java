@@ -80,12 +80,6 @@ public class Student {
     public LocalDate getDob() {
         return dob;
     }
-    
-    
-// Add a separate method for serialization
-public String getFormattedDob() {
-    return dob != null ? dob.toString() : null;
-}
 
     public void setDob(LocalDate dob) {
         this.dob = dob;
@@ -101,16 +95,5 @@ public Integer getAge() {
 
     public void setAge(Integer age) {
         this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return "Studnet{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", dob=" + dob +
-                ", age=" + age +
-                '}';
     }
 }
